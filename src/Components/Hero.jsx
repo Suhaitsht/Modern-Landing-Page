@@ -3,7 +3,10 @@ import HeroImage from "../assets/hero-image.png";
 
 export default function Hero() {
   return (
-    <section className="container mx-auto flex flex-col md:flex-row justify-between items-center pt-44 pb-6 sm:px-6 lg:px-8">
+    <section
+      id="home"
+      className="container mx-auto flex flex-col md:flex-row justify-between items-center pt-44 pb-6 sm:px-6 lg:px-8"
+    >
       {/* left colo */}
       <div className="w-full md:w-1/2 space-y-8">
         {/* start badge */}
