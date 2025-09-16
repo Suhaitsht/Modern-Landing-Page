@@ -1,6 +1,15 @@
 import "./App.css";
+import CompanyLogo from "./Components/CompanyLogo";
+import FeaturesSection from "./Components/FeaturesSection";
 import Hero from "./Components/Hero";
+import MonitorSection from "./Components/MonitorSection";
 import Navbar from "./Components/Navbar";
+import NewsSection from "./Components/NewsSection";
+import PricingSection from "./Components/PricingSection";
+import PurposeSection from "./Components/PurposeSection";
+import Schedule from "./Components/Schedule";
+import ServicesSection from "./Components/ServicesSection";
+import TestimonialsSection from "./Components/TestimonialsSection";
 
 function App() {
   return (
@@ -9,6 +18,15 @@ function App() {
       <div className="overflow-hidden">
         <Navbar />
         <Hero />
+        <CompanyLogo />
+        <PurposeSection />
+        <FeaturesSection />
+        <Schedule />
+        <MonitorSection />
+        <PricingSection />
+        <ServicesSection />
+        <TestimonialsSection />
+        <NewsSection />
       </div>
     </main>
   );
