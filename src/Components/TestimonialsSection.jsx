@@ -11,7 +11,7 @@ import { testimonials } from "../../utils/data";
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-16 px-4 max-w-7xl mx-auto">
+    <section className="py-16 px-4 max-w-7xl mx-auto" id="testimonials">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold md:text-4xl mb-4">
           What our happy Client says

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { FaMix } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
 import { VscChromeClose } from "react-icons/vsc";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../utils/motion";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +17,13 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 border-gray-100 shadow-sm ">
+    <motion.nav
+      variants={fadeIn("down", 0.2)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 border-gray-100 shadow-sm "
+    >
       <div className="w-full container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 md:h-20 h-16">
         {/* logo */}
         <div className="flex items-center gap-1 cursor-pointer">
@@ -94,6 +102,6 @@ export default function Navbar() {
           </div>
         </div>
       )}
-    </nav>
+    </motion.nav>
   );
 }
